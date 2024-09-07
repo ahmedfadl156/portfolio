@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Ahmed Fadl</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquiries.css">
+</head>
+<body>
+  <div class="theme-switch-wrapper">
+    <label class="theme-switch" for="checkbox">
+      <input type="checkbox" id="checkbox" />
+      <div class="slider round">
+        <span class="moon">🌙</span>
+        <span class="sun">☀️</span>
+      </div>
+    </label>
+  </div>
+
+    <nav id="Desktop-nav">
+        <div class="logo">
+            Ahmed Fadl
+        </div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">
+            Ahmed Fadl
+        </div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#Experiences" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+   <section id="profile">
+    <div class="section__pic-container">
+        <img src="assets/insta photo.jpg" alt="Ahmed Fadl's Photo">
+    </div>
+    <div class="section__text">
+        <p class="section__text-p1">
+            Hello, I'm
+        </p>
+        <h1 class="title">Ahmed Fadl</h1>
+        <p class="section__text-p2">Software Engineer</p>
+        <div class="btn-container">
+            <a href="assets/Ahmed fadl.pdf" class="btn btn-color-2" download  target="_blank">
+              Download CV
+            </a>
+            <button class="btn btn-color-1" onclick="location.href='#contact'">
+              Contact Info
+            </button>
+          </div>
+          <div class="social-container">
+            <a href="https://github.com/ahmedfadl156" target="_blank" rel="noopener noreferrer">
+              <img src="assets/github.png" alt="GitHub" class="icon">
+            </a>
+            <a href="https://www.linkedin.com/in/ahmed-fadl-753b84319/" target="_blank" rel="noopener noreferrer">
+              <img src="assets/linkedin.png" alt="LinkedIn" class="icon">
+            </a>
+          </div>
+    </div>
+   </section>
+
+   <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img
+          src="assets/insta photo.jpg"
+          alt="Profile picture"
+          class="about-pic"
+        />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img
+              src="./assets/experience.png"
+              alt="Experience icon"
+              class="icon"
+            />
+            <h3>Experience</h3>
+            <p>2+ years <br />Software Engineer</p>
+          </div>
+          <div class="details-container">
+            <img
+              src="./assets/education.png"
+              alt="Education icon"
+              class="icon"
+            />
+            <h3>Education</h3>
+            <p>CS Bachelor's Degree<br />CS Master's Degree</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            As a second-year computer science student with a focus on front-end
+            and full-stack development, I'm passionate about creating
+            user-friendly web applications. My coursework has given me a solid
+            foundation in programming fundamentals, while my personal projects
+            have allowed me to explore modern web technologies. I'm constantly
+            learning and improving my skills in HTML, CSS, JavaScript, and
+            various frameworks. My goal is to become a versatile software
+            engineer capable of building robust and innovative solutions.
+          </p>
+        </div>
+      </div>
+    </div>
+    <img
+      src="./assets/arrow.png"
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='./#experience'"
+    />
+  </section>
+  <section id="experience">
+    <h1 class="title">Experience</h1>
+    <div class="container">
+      <div class="skills-container">
+        <div class="skill-section">
+          <h2>Frontend Development</h2>
+          <div id="frontend-skills"></div>
+        </div>
+        <div class="skill-section">
+          <h2>Backend Development</h2>
+          <div id="backend-skills"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img
+              src="./assets/twitter (2).png"
+              alt="Project 1"
+              class="project-img"
+            />
+          </div>
+          <h2 class="experience-sub-title project-title">Youtube Clone</h2>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="window.open('https://github.com/ahmedfadl156/youtube-clone', '_blank')"
+            >
+              Github
+            </button>
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="window.open('https://ahmedfadl156.github.io/youtube-clone/', '_blank')"
+            >
+              Live Demo
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img
+              src="./assets/twitter (1).png"
+              alt="Project 2"
+              class="project-img"
+            />
+          </div>
+          <h2 class="experience-sub-title project-title">Twitter Clone</h2>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="window.open('https://github.com/ahmedfadl156/clone-twitter', '_blank')"
+            >
+              Github
+            </button>
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="window.open('https://ahmedfadl156.github.io/clone-twitter/', '_blank')"
+            >
+              Live Demo
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img
+              src="./assets/pixlr-image-generator-8deb8b0a-40c8-43cf-9aba-ce1335b0430c.png"
+              alt="Project 3"
+              class="project-img"
+            />
+          </div>
+          <h2 class="experience-sub-title project-title">Movie Selector</h2>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="window.open('https://github.com/ahmedfadl156/movie-suggestor', '_blank')"
+            >
+              Github
+            </button>
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="window.open('https://ahmedfadl156.github.io/movie-suggestor/', '_blank')"
+            >
+              Live Demo
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img
+      src="./assets/arrow.png"
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='./#contact'"
+    />
+  </section>
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img
+          src="./assets/email.png"
+          alt="Email icon"
+          class="icon contact-icon email-icon"
+        />
+        <p><a href="mailto:af38765222@gmail.com">af38765222@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img
+          src="./assets/linkedin.png"
+          alt="LinkedIn icon"
+          class="icon contact-icon"
+        />
+        <p><a href="https://www.linkedin.com/in/ahmed-fadl-753b84319/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2024 Ahmed Fadl. All Rights Reserved.</p>
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
